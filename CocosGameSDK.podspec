@@ -9,4 +9,6 @@ Pod::Spec.new do |spec|
   spec.source = { :http => 'https://github.com/eathwinster-jk/cocos-game-ios-sdk/releases/download/0.1.9/CocosGameSDK-0.1.9.xcframework.zip' }
   spec.vendored_frameworks = 'CocosGameSDK.xcframework'
   spec.frameworks = 'UIKit', 'Metal', 'QuartzCore', 'AVFoundation', 'AudioToolbox', 'WebKit'
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
