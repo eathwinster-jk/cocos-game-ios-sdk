@@ -62,4 +62,27 @@ if (!session) return; // 参数校验失败，error 中包含原因
 [[CocosGameSDK shared] openGame:@"niuniu" sessionConfig:session inContainer:self.gameContainer fromViewController:self];
 ```
 
+Swift 无需桥接头文件，直接 `import`：
+
+```swift
+import CocosGameSDK
+
+// AppDelegate：创建窗口后初始化一次
+CocosGameSDK.shared.initialize(window: window, launchOptions: launchOptions)
+
+// 宿主登录后创建会话并在容器中打开游戏；参数校验失败时抛出错误
+let session = try CocosGameSessionConfig(websocketURL: websocketURL,
+                                         apiBaseURL: apiBaseURL,
+                                         liveUserId: liveUserId,
+                                         imUserId: imUserId,
+                                         liveToken: liveToken,
+                                         sceneType: sceneType,
+                                         sceneId: sceneId,
+                                         tableId: 0,
+                                         clientVersion: appVersion,
+                                         deviceType: "iOS")
+CocosGameSDK.shared.delegate = self
+CocosGameSDK.shared.openGame("niuniu", sessionConfig: session, container: gameContainer, viewController: self)
+```
+
 完整 API、回调与验收清单见接入文档。
