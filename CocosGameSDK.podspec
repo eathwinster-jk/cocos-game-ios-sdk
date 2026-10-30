@@ -1,12 +1,12 @@
 Pod::Spec.new do |spec|
   spec.name = 'CocosGameSDK'
-  spec.version = '0.2.3'
+  spec.version = '0.2.4'
   spec.summary = 'Cocos Game iOS SDK'
   spec.homepage = 'https://github.com/eathwinster-jk/cocos-game-ios-sdk'
   spec.license = { :type => 'Proprietary', :text => 'Copyright eath. All rights reserved.' }
   spec.author = { 'eath' => 'eath@localhost' }
   spec.platform = :ios, '16.0'
-  spec.source = { :http => 'https://github.com/eathwinster-jk/cocos-game-ios-sdk/releases/download/0.2.3/CocosGameSDK-0.2.3.xcframework.zip' }
+  spec.source = { :http => 'https://github.com/eathwinster-jk/cocos-game-ios-sdk/releases/download/0.2.4/CocosGameSDK-0.2.4.xcframework.zip' }
   spec.vendored_frameworks = 'CocosGameSDK.xcframework'
   spec.frameworks = 'UIKit', 'Metal', 'QuartzCore', 'AVFoundation', 'AudioToolbox', 'WebKit'
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
