@@ -11,13 +11,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "CocosGameSDK",
-            url: "https://github.com/eathwinster-jk/cocos-game-ios-sdk/releases/download/0.6.18/CocosGameSDK-0.6.18.xcframework.zip",
-            checksum: "5e7d2f4a6680f896cd45fe6e9851f8ee976cd1ba9db186652cdaf22f157a3ba7"
+            url: "https://github.com/eathwinster-jk/cocos-game-ios-sdk/releases/download/0.6.19/CocosGameSDK-0.6.19.xcframework.zip",
+            checksum: "0d377e984a520b719071d174baad61a76667cff791ee1c721c16b53e422bfe50"
         ),
         .binaryTarget(
             name: "CocosGameHotUpdate",
-            url: "https://github.com/eathwinster-jk/cocos-game-ios-sdk/releases/download/0.6.18/CocosGameHotUpdate-0.6.18.xcframework.zip",
-            checksum: "a2abbb5fe916b9cd1268e9cfc80d884053a5c28892648f4b46b4bf8a89f5a232"
+            url: "https://github.com/eathwinster-jk/cocos-game-ios-sdk/releases/download/0.6.19/CocosGameHotUpdate-0.6.19.xcframework.zip",
+            checksum: "a9dc0e8d7b40509c948beb1d91e6b406fa05ac4807314ed1ec578cd75ecff5de"
         ),
     ]
 )
