@@ -1,12 +1,12 @@
 Pod::Spec.new do |spec|
   spec.name = 'CocosGameHotUpdate'
-  spec.version = '0.6.29'
+  spec.version = '0.6.30'
   spec.summary = 'Cocos Game iOS SDK hot update module'
   spec.homepage = 'https://github.com/eathwinster-jk/cocos-game-ios-sdk'
   spec.license = { :type => 'Proprietary', :text => 'Copyright eath. All rights reserved.' }
   spec.author = { 'eath' => 'eath@localhost' }
   spec.platform = :ios, '16.0'
-  spec.source = { :http => 'https://github.com/eathwinster-jk/cocos-game-ios-sdk/releases/download/0.6.29/CocosGameHotUpdate-0.6.29.xcframework.zip' }
+  spec.source = { :http => 'https://github.com/eathwinster-jk/cocos-game-ios-sdk/releases/download/0.6.30/CocosGameHotUpdate-0.6.30.xcframework.zip' }
   spec.vendored_frameworks = 'CocosGameHotUpdate.xcframework'
-  spec.dependency 'CocosGameSDK', '0.6.29'
+  spec.dependency 'CocosGameSDK', '0.6.30'
 end
